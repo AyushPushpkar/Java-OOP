@@ -1,0 +1,32 @@
+{
+  "java.project.sourcePaths": ["src"], // Set source folder
+  "java.project.outputPath": "bin", // Set compiled output folder
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-17",
+      "path": "C:\\Program Files\\Java\\jdk-17"
+    }
+  ],
+  "java.autobuild.enabled": true, // Enable automatic build
+  "java.format.settings.url": "https://raw.githubusercontent.com/redhat-developer/vscode-java/master/java-formatter.xml",
+  "java.compile.nullAnalysis.mode": "automatic",
+  "java.dependency.syncWithFolderExplorer": true,
+  "java.dependency.autoRefresh": true,
+  "java.debug.settings.console": "integratedTerminal",
+  "java.debug.settings.enableRunDebugCodeLens": true,
+  "editor.formatOnSave": true, // Auto-format on save
+  "files.exclude": {
+    // Ignore unnecessary files
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/bin/": true
+  },
+  "files.autoSave": "afterDelay", // Auto-save changes
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true // Auto-organize imports
+  },
+  "java.trace.server": "verbose", // Enable verbose logging for Java extension
+  "java.import.gradle.enabled": true, // Enable Gradle for dependencies
+  "java.import.maven.enabled": true // Enable Maven for dependencies
+}
